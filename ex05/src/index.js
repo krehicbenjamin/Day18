@@ -7,11 +7,12 @@ let shoppingList = new Map([
 ]);
 
 let arrKey = [];
+let arrValue = [];
+
 for (let col of shoppingList.entries()) {
   arrKey.push(col[0]);
   console.log(`groceries: ${col[0]}`);
 }
-let arrValue = [];
 for (let col of shoppingList.entries()) {
   arrValue.push(col[1]);
   console.log(`amount: ${col[1]}`);
